@@ -129,6 +129,11 @@ a.main-menu-nav.active:hover{
 a.main-menu-nav:hover{
 	border-bottom: 4px solid #A0A3AA;
 }
+
+header{
+	height: 106px;
+}
+
 .nav-link {
 	padding: 0px 10px;
 	color: #dddddd;
@@ -140,9 +145,40 @@ a.main-menu-nav:hover{
 	background-color: #000099;
 }
 
+.yz-container-flex{
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	flex-direction: row;
+	-ms-flex-pack: center;
+	-webkit-box-pack: center;
+	justify-content: center;
+	max-width: 1024px;
+}
 
-.yz-my {}
+.yz-container{
+	width: 1024px;
+	height: 100%;
+}
 
+.yz-container-bg{
+	background-color: #FFFFFF;
+	margin-top: 15px;
+}
+
+.yz-left-menu{
+	float: left;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-right: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.yz-menu-container{
+	margin-top: 30px;
+	width: 210px;
+	height: 100%;
+	
+}
 
 /*header{
 	position: ;
