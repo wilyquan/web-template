@@ -102,3 +102,11 @@ padding-bottom: 9999px;}
 .cc-footer a{color:#8d8d8d;}
 .cc-footer a:hover{color:#459ae9}
 .cc-footer .vs{color:#ccc;}
+
+/*内容部分*/
+.cc-card-header {padding: .30rem 1.25rem; background: #F4F5F9;}
+.cc-col-form-label-sm{line-height: 1.rem;}
+.cc-card-row {margin-top: 30px;}
+
+.cc-button{line-height: 1.2; }
+.cc-button.cc-button-ok{max-width: 110px; background: #44B549; color: #FFFFFF; border-color: #44B549;}
