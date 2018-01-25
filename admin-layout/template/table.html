@@ -10,8 +10,8 @@
 		<link href="../css/global.css" rel="stylesheet" />
 		<link href="../css/form-validation.css" rel="stylesheet" />
 		<link href="../css/main.css" rel="stylesheet" />
-		<script type="text/javascript" src="../js/jquery-1.9.1.min.js" ></script>
-		<script type="text/javascript" src="../js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 
 	</head>
 
@@ -40,7 +40,7 @@
 					<div class="d-flex flex-row justify-content-start nav">
 						<a href="javascript:;" class="header-logo"><img src="../img/common/logo.png"></img>
 						</a>
-						<a href="user-info.html" class="nav-link header-nav-item ">我的面板</a>
+						<a href="../user-info.html" class="nav-link header-nav-item ">我的面板</a>
 						<a href="javascript:;" class="nav-link header-nav-item">系统设置</a>
 						<a href="javascript:;" class="nav-link header-nav-item">客户管理</a>
 						<a href="index.html" class="nav-link header-nav-item active">模版管理</a>
@@ -129,88 +129,259 @@
 							<!--具体的内容页面-->
 							<div class="cc-content-main">
 								<!--<h6 class="mb-3">详细信息</h6>-->
-								<div class="row">
-									<div class="col-sm-12">
-										<div class="row cc-row">
-											<div class="col-sm-12 ">
-												<div id="accordion">
-												  <div class="card">
-												    <div class="card-header cc-card-header" id="headingOne">
-												      <h8 class="mb-3">
-												      	账户信息
-												        <!--<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-												         账户信息
-												        </button>-->
-												      </h8>
-												    </div>
-												    <!--账户信息-->
-												    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-												      <div class="card-body">
-												      	<div class="row">
-												      		<div class="col-sm-6">
-												      			<label class="col-3 cc-col-form-label-sm text-right">登陆账户</label>
-												      			<label class="col-8 cc-col-form-label-sm text-left">root</label>
-												      		</div>
-												      		<div class="col-sm-6">
-												      			<label class="col-3 cc-col-form-label-sm text-right">用户角色</label>
-												      			<label class="col-8 cc-col-form-label-sm text-left">公司管理员，系统管理员</label>
-												      		</div>
-												      	</div>
-												      	<div class="row">
-												      		<div class="col-sm-6">
-												      			<label class="col-3 cc-col-form-label-sm text-right">创建时间</label>
-												      			<label class="col-8 cc-col-form-label-sm text-left">2018年1月18日 12:10:11</label>
-												      		</div>
-												      		<div class="col-sm-6">
-												      			<label class="col-3 cc-col-form-label-sm text-right">用户类型</label>
-												      			<label class="col-8 cc-col-form-label-sm text-left">普通员工</label>
-												      		</div>
-												      	</div>
-												      </div>
-												    </div>
-												  </div>
+								<div class="row cc-row">
+									<div class="col-sm-12 row">
+										<div class="col-sm-4 form-inline form-group">
+											<label class="col-4 form-control-sm justify-content-end" for="exampleInputEmail3">邮箱地址</label>
+											<input type="email" class="col-8  form-control form-control-sm " id="exampleInputEmail" placeholder="Email">
+										</div>
+										<div class="col-sm-4 form-inline form-group">
+											<label class="col-4 form-control-sm  justify-content-end" for="exampleInputEmail3">邮箱</label>
+											<input type="email" class="col-8 form-control form-control-sm" id="exampleInputEmail2" placeholder="Email">
+										</div>
+										<div class="col-sm-4 form-inline form-group">
+											<label class="form-control-sm col-4 justify-content-end" for="exampleInputEmail3">邮箱地址</label>
+											<input type="email" class="col-8 form-control form-control-sm" id="exampleInputEmail3" placeholder="Email">
+										</div>
+										<div class="col-sm-4 form-inline form-group">
+											<label class="form-control-sm col-4 justify-content-end" for="exampleInputEmail3">邮箱地址</label>
+											<input type="email" class="col-8 form-control form-control-sm" id="exampleInputEmail4" placeholder="Email">
+										</div>
+										<div class="col-sm-4 form-inline form-group">
+											<label class="form-control-sm col-4 justify-content-end" for="exampleInputEmail3">邮箱地址</label>
+											<input type="email" class="col-8 form-control form-control-sm" id="exampleInputEmail5" placeholder="Email">
+										</div>
+										<form class="form-inline">
+											<div class="form-group cc-form-group">
+												<label class="form-control-sm" for="exampleInputEmail3">邮箱地址</label>
+												<input type="email" class="col-8 form-control form-control-sm" id="exampleInputEmail6" placeholder="Email">
+											</div>
+											<div class="form-group cc-form-group">
+												<label class="form-control-sm" for="exampleInputPassword3">邮箱</label>
+												<input type="password" class="col-8 form-control form-control-sm" id="exampleInputPassword7" placeholder="Password">
+											</div>
+
+											<div class="form-group cc-form-group">
+												<label class="form-control-sm" for="exampleInputPassword3">邮箱地址</label>
+												<input type="password" class="col-8 form-control form-control-sm" id="exampleInputPassword8" placeholder="Password">
+											</div>
+
+											<div class="form-group cc-form-group">
+												<label class="form-control-sm" for="exampleInputPassword3">密码密码</label>
+												<input type="password" class="col-8 form-control form-control-sm" id="exampleInputPassword5" placeholder="Password">
+											</div>
+											<div class="form-group cc-form-group">
+												<label class="form-control-sm" for="exampleInputPassword3">密码密码</label>
+												<input type="password" class="col-8 form-control form-control-sm" id="exampleInputPassword6" placeholder="Password">
+											</div>
+
+											<button type="submit" class="btn btn-default">Sign in</button>
+										</form>
+
+										<!--<form class="needs-validation" novalidate>
+											
+											<div class="d-flex justify-content-start">
+												<div class="">
+													<label for="inputPassword" class="col-form-label-sm text-right">类型</label>
+													<input type="text" class="form-control form-control-sm" id="info" placeholder="请输入类型" required/>
+												</div>
+											</div>
+											<div class="form-group row">
+											<label for="inputPassword" class="col-sm-2 col-form-label col-form-label-sm text-right">类型</label>
+											<div class="col-sm-2">
+												<input type="text" class="form-control form-control-sm" id="info" placeholder="请输入类型" required/>
+												<div class="invalid-feedback">
+													旧密码不能为空
+												</div>
+											</div>
+											<label for="inputPassword" class="col-sm-2 col-form-label col-form-label-sm text-right">类型</label>
+											<div class="col-sm-2">
+												<input type="text" class="form-control form-control-sm" id="info" placeholder="请输入类型" required/>
+												<div class="invalid-feedback">
+													旧密码不能为空
+												</div>
+											</div>
+											<label for="inputPassword" class="col-sm-2 col-form-label col-form-label-sm text-right">类型</label>
+											<div class="col-sm-2">
+												<input type="text" class="form-control form-control-sm" id="info" placeholder="请输入类型" required/>
+												<div class="invalid-feedback">
+													旧密码不能为空
+												</div>
+											</div>
+											<label for="inputPassword" class="col-sm-2 col-form-label col-form-label-sm text-right">类型</label>
+											<div class="col-sm-2">
+												<input type="text" class="form-control form-control-sm" id="info" placeholder="请输入类型" required/>
+												<div class="invalid-feedback">
+													旧密码不能为空
 												</div>
 											</div>
 										</div>
-										
-										<div class="row cc-card-row">
-											<div class="col-sm-12 ">
-												<div id="accordion">
-												  <div class="card">
-												    <div class="card-header cc-card-header" id="headingOne">
-												      <h8 class="mb-3">
-												      	基本信息
-												      </h8>
-												    </div>
-												    <!--账户信息-->
-												    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-												      <div class="card-body">
-												      	<div class="row">
-												      		<div class="col-sm-6">
-												      			<label class="col-3 cc-col-form-label-sm text-right">姓名</label>
-												      			<label class="col-8 cc-col-form-label-sm text-left">管理员</label>
-												      		</div>
-												      		<div class="col-sm-6">
-												      			<label class="col-3 cc-col-form-label-sm text-right">手机号码</label>
-												      			<label class="col-8 cc-col-form-label-sm text-left"><a href="tel:152000000">1520000000</a></label>
-												      		</div>
-												      	</div>
-												      	<div class="row">
-												      		<div class="col-sm-6">
-												      			<label class="col-3 cc-col-form-label-sm text-right">邮箱地址</label>
-												      			<label class="col-8 cc-col-form-label-sm text-left">admin@jewelvary.com</label>
-												      		</div>
-												      		<div class="col-sm-6">
-												      			<label class="col-3 cc-col-form-label-sm text-right">用户类型</label>
-												      			<label class="col-8 cc-col-form-label-sm text-left">普通员工</label>
-												      		</div>
-												      	</div>
-												      </div>
-												    </div>
-												  </div>
-												</div>
-											</div>
+										</form>-->
+										<hr class="mb-3" />
+										<div class="cc-table">
+											<table class="table table-sm table-hover table-bordered">
+												<!--<caption>List of users</caption>-->
+												<thead>
+													<tr>
+														<th scope="col">类型</th>
+														<th scope="col">标签</th>
+														<th scope="col">键值</th>
+														<th scope="col">排序</th>
+														<th scope="col">排序</th>
+														<th scope="col">排序</th>
+														<th scope="col">排序</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>@内容状态</td>
+													</tr>
+													<tr>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>@内容状态</td>
+													</tr>
+													<tr>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>@内容状态</td>
+													</tr>
+													<tr>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>@内容状态</td>
+													</tr>
+													<tr>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>@内容状态</td>
+													</tr>
+													<tr>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>@内容状态</td>
+													</tr>
+													<tr>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>@内容状态</td>
+													</tr>
+													<tr>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>@内容状态</td>
+													</tr>
+													<tr>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>@内容状态</td>
+													</tr>
+													<tr>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>@内容状态</td>
+													</tr>
+													<tr>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>@内容状态</td>
+													</tr>
+													<tr>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>@内容状态</td>
+													</tr>
+													<tr>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>@内容状态</td>
+													</tr>
+													<tr>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>@内容状态</td>
+													</tr>
+												</tbody>
+											</table>
 										</div>
+
+										<nav aria-label="Page navigation ">
+											<ul class="pagination justify-content-start cc-page">
+												<li class="page-item disabled">
+													<a class="page-link" href="#" tabindex="-1">Previous</a>
+												</li>
+												<li class="page-item">
+													<a class="page-link" href="#">1</a>
+												</li>
+												<li class="page-item">
+													<a class="page-link" href="#">2</a>
+												</li>
+												<li class="page-item">
+													<a class="page-link" href="#">3</a>
+												</li>
+												<li class="page-item">
+													<a class="page-link" href="#">Next</a>
+												</li>
+											</ul>
+										</nav>
 									</div>
 								</div>
 

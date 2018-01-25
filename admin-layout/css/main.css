@@ -110,3 +110,15 @@ padding-bottom: 9999px;}
 
 .cc-button{line-height: 1.2; }
 .cc-button.cc-button-ok{max-width: 110px; background: #44B549; color: #FFFFFF; border-color: #44B549;}
+
+.cc-table {border-radius: .25rem; border: 1px solid rgba(0,0,0,.125);}
+.cc-table thead th{ background: #F4F5F9; border-bottom: 0px; border-top: 0px;padding:5px;font-weight: normal; font-size: 14px;}
+.cc-table tbody td{ font-size: 14px;}
+.cc-page {margin-top: 15px;}
+
+.cc-table .table{margin: 0px;}
+
+
+.cc-form-group{width: 280px;}
+
+
