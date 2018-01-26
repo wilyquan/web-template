@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="utf-8" />
-		<title>后台布局页面-表格信息</title>
+		<title>后台布局页面-信息模版</title>
 		<link href="../css/bootstrap.min.css" rel="stylesheet" />
 
 		<link href="../css/icon.css" rel="stylesheet" />
@@ -40,7 +40,7 @@
 					<div class="d-flex flex-row justify-content-start nav">
 						<a href="javascript:;" class="header-logo"><img src="../img/common/logo.png"></img>
 						</a>
-						<a href="../user-info.html" class="nav-link header-nav-item ">我的面板</a>
+						<a href="user-info.html" class="nav-link header-nav-item ">我的面板</a>
 						<a href="javascript:;" class="nav-link header-nav-item">系统设置</a>
 						<a href="javascript:;" class="nav-link header-nav-item">客户管理</a>
 						<a href="index.html" class="nav-link header-nav-item active">模版管理</a>
@@ -62,14 +62,14 @@
 							<dl>
 								<dt><i class="type-ico "></i>模版信息</dt>
 
-								<dd class="">
+								<dd class="selected">
 									<a href="info.html">信息介绍</a>
 								</dd>
 
 								<dd class="">
 									<a href="form.html">表单信息</a>
 								</dd>
-								<dd class="selected">
+								<dd class="">
 									<a href="table.html">表格信息</a>
 								</dd>
 
@@ -129,7 +129,9 @@
 							<!--具体的内容页面-->
 							<div class="cc-content-main">
 								<!--<h6 class="mb-3">详细信息</h6>-->
+
 								<div class="row cc-row">
+									<!--搜索条件-->
 									<div class="col-sm-12 row">
 										<div class="col-sm-4 form-inline form-group">
 											<label class="col-4 form-control-sm justify-content-end" for="exampleInputEmail3">邮箱地址</label>
@@ -151,73 +153,21 @@
 											<label class="form-control-sm col-4 justify-content-end" for="exampleInputEmail3">邮箱地址</label>
 											<input type="email" class="col-8 form-control form-control-sm" id="exampleInputEmail5" placeholder="Email">
 										</div>
-										<form class="form-inline">
-											<div class="form-group cc-form-group">
-												<label class="form-control-sm" for="exampleInputEmail3">邮箱地址</label>
-												<input type="email" class="col-8 form-control form-control-sm" id="exampleInputEmail6" placeholder="Email">
-											</div>
-											<div class="form-group cc-form-group">
-												<label class="form-control-sm" for="exampleInputPassword3">邮箱</label>
-												<input type="password" class="col-8 form-control form-control-sm" id="exampleInputPassword7" placeholder="Password">
-											</div>
-
-											<div class="form-group cc-form-group">
-												<label class="form-control-sm" for="exampleInputPassword3">邮箱地址</label>
-												<input type="password" class="col-8 form-control form-control-sm" id="exampleInputPassword8" placeholder="Password">
-											</div>
-
-											<div class="form-group cc-form-group">
-												<label class="form-control-sm" for="exampleInputPassword3">密码密码</label>
-												<input type="password" class="col-8 form-control form-control-sm" id="exampleInputPassword5" placeholder="Password">
-											</div>
-											<div class="form-group cc-form-group">
-												<label class="form-control-sm" for="exampleInputPassword3">密码密码</label>
-												<input type="password" class="col-8 form-control form-control-sm" id="exampleInputPassword6" placeholder="Password">
-											</div>
-
-											<button type="submit" class="btn btn-default">Sign in</button>
-										</form>
-
-										<!--<form class="needs-validation" novalidate>
-											
-											<div class="d-flex justify-content-start">
-												<div class="">
-													<label for="inputPassword" class="col-form-label-sm text-right">类型</label>
-													<input type="text" class="form-control form-control-sm" id="info" placeholder="请输入类型" required/>
-												</div>
-											</div>
-											<div class="form-group row">
-											<label for="inputPassword" class="col-sm-2 col-form-label col-form-label-sm text-right">类型</label>
-											<div class="col-sm-2">
-												<input type="text" class="form-control form-control-sm" id="info" placeholder="请输入类型" required/>
-												<div class="invalid-feedback">
-													旧密码不能为空
-												</div>
-											</div>
-											<label for="inputPassword" class="col-sm-2 col-form-label col-form-label-sm text-right">类型</label>
-											<div class="col-sm-2">
-												<input type="text" class="form-control form-control-sm" id="info" placeholder="请输入类型" required/>
-												<div class="invalid-feedback">
-													旧密码不能为空
-												</div>
-											</div>
-											<label for="inputPassword" class="col-sm-2 col-form-label col-form-label-sm text-right">类型</label>
-											<div class="col-sm-2">
-												<input type="text" class="form-control form-control-sm" id="info" placeholder="请输入类型" required/>
-												<div class="invalid-feedback">
-													旧密码不能为空
-												</div>
-											</div>
-											<label for="inputPassword" class="col-sm-2 col-form-label col-form-label-sm text-right">类型</label>
-											<div class="col-sm-2">
-												<input type="text" class="form-control form-control-sm" id="info" placeholder="请输入类型" required/>
-												<div class="invalid-feedback">
-													旧密码不能为空
-												</div>
-											</div>
-										</div>
-										</form>-->
-										<hr class="mb-3" />
+									</div>
+									<div class="col-sm-12 row cc-query-group">
+										<button class="col-8 btn btn-primary btn-block cc-button cc-button-ok" type="submit">提交</button>
+										<button class="col-8 btn btn-primary btn-block cc-button cc-button-ok" type="submit">提交</button>
+										<!--<div class="col-sm-4 form-inline form-group">
+											<div class="col-4 "></div>
+											<button class="col-8 btn btn-primary btn-block cc-button cc-button-ok" type="submit">提交</button>
+											<button class="col-8 btn btn-primary btn-block cc-button cc-button-ok" type="submit">提交</button>
+										</div>-->
+									</div>
+									<!--搜索条件-->
+								</div>
+								<!--table-->
+								<div class="row cc-card-row">
+									<div class="col-sm-12 ">
 										<div class="cc-table">
 											<table class="table table-sm table-hover table-bordered">
 												<!--<caption>List of users</caption>-->
@@ -362,26 +312,7 @@
 												</tbody>
 											</table>
 										</div>
-
-										<nav aria-label="Page navigation ">
-											<ul class="pagination justify-content-start cc-page">
-												<li class="page-item disabled">
-													<a class="page-link" href="#" tabindex="-1">Previous</a>
-												</li>
-												<li class="page-item">
-													<a class="page-link" href="#">1</a>
-												</li>
-												<li class="page-item">
-													<a class="page-link" href="#">2</a>
-												</li>
-												<li class="page-item">
-													<a class="page-link" href="#">3</a>
-												</li>
-												<li class="page-item">
-													<a class="page-link" href="#">Next</a>
-												</li>
-											</ul>
-										</nav>
+										<!--table-->
 									</div>
 								</div>
 
