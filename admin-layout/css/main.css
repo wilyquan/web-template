@@ -121,8 +121,9 @@ padding-bottom: 9999px;}
 .cc-table-top-left{color: #666666; margin-bottom: 10px; font-size: 13px;}
 .cc-table-top-right{margin-bottom: 10px; font-size: 14px;line-height: 20px; vertical-align: middle; display: block}
 .cc-button-icon-lable{margin-left: 5px;margin-right:5px; }
-.cc-icon-size {width: 17px; margin-left: 5px; }
+.cc-icon-size {width: 15px; margin-left: 5px;}
 .cc-table .table{margin: 0px;}
+.cc-col-a{margin-left: 5px;}
 
 
 .cc-form-group{width: 280px;}
