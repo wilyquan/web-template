@@ -10,9 +10,7 @@
 					<!--<dd v-for="item in menus" :key="item.id">
 					<nuxt-link to="/person/info">{{item.name}}</nuxt-link>
 					</dd>-->
-					
 					<a v-if="menus != null" v-for="item in menus" :key="item.id" class="nav-link header-nav-item" v-on:click="selectMenu(item.id)" v-bind:class="{ active: item.selected }">{{item.name}}</a>
-					{{$store.state.count}}
 					<!--<a href="javascript:;" class="nav-link header-nav-item">我的面板</a>
 					<a href="javascript:;" class="nav-link header-nav-item">系统设置</a>
 					<a href="javascript:;" class="nav-link header-nav-item">客户管理</a>
@@ -26,11 +24,19 @@
 <script type="text/javascript">
 	import { mapMutations } from 'vuex'
 	export default {
-		fetch({store, params}) {
-			console.log("==================");
-			debugger;
-			store.commit('increment')
-		},
+//		data () {
+// 		 	return { project: 'default' }
+//		},
+//		fetch({store, params}) {
+//			console.log("==================");
+//			debugger;
+//			store.commit('increment')
+//		},
+//		asyncData (context) {
+//			debugger;
+//			console.log("========nuxt=========");
+// 			return { project: 'nuxt' }
+//		},
 		computed: {
 			menus() {
 				return this.$store.state.menus;
@@ -52,8 +58,9 @@
 					}
 					console.log("select menu name = " + item.name);
 				}
-				localStorage.UserInfo = "wangquan";
+//				localStorage.UserInfo = "wangquan";
 				console.log("select menu id = " + selectId);
+				
 			}
 		}
 	}

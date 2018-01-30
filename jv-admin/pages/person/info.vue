@@ -11,12 +11,12 @@
 							<div id="accordion">
 								<div class="card">
 									<div class="card-header cc-card-header" id="headingOne">
-										<h8 class="mb-3">
+										<h6 class="mb-3">
 											账户信息
 											<!--<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 												         账户信息
 												        </button>-->
-										</h8>
+										</h6>
 									</div>
 									<!--账户信息-->
 									<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
@@ -53,9 +53,9 @@
 							<div id="accordion">
 								<div class="card">
 									<div class="card-header cc-card-header" id="headingOne">
-										<h8 class="mb-3">
-											基本信息
-										</h8>
+										<h6 class="mb-3">
+											基本信息 {{project}}
+										</h6>
 									</div>
 									<!--账户信息-->
 									<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
@@ -107,6 +107,14 @@
 				title: "vue nuxt admin",
 				meta: []
 			}
-		}
+		},
+		data () {
+   		 	return { project: 'default' }
+  		},
+//		asyncData (context) {
+////			localStorage.user ="wangquan";
+//			console.log("========nuxt=========");
+// 			return { project: 'nuxt' }
+//		}
 	}
 </script>

@@ -1,6 +1,6 @@
 <template>
 	<div class="cc-content-hd">
-		<h2 class="cc-content-title"><p>账户信息{{$store.state.count}}</p></h2>
+		<h2 class="cc-content-title"><p>账户信息</p></h2>
 		<!--具体的内容页面-->
 		<div class="cc-content-main">
 			<!--<h6 class="mb-3">详细信息</h6>-->
@@ -91,7 +91,7 @@
 	</div>
 </template>
 
-<script>
+<script type="text/javascript">
 	import CCTopbar from '~/components/nav-topbar.vue'
 	import axios from 'axios'
 	export default {
@@ -110,15 +110,17 @@
 		},
 		fetch ({ store, params,redirect }) {
 			debugger;
+//			localStorage.user ="wangquan";
 			console.log("hello world");
 		    return axios.get('http://localhost:8080/menu/nuxt')
-		    .then((res) => {
-		      store.commit('setMenus', res.data)
-		    }).catch((e) => {
-		    		console.log("99999999999999999");
-		    		redirect("/error");
-//   			 callback({ statusCode: 404, message: 'Post not found' })
-    			})
+				.then((res) => {
+			      store.commit('setMenus', res.data);
+			    }).catch((e) => {
+			    		console.log("99999999999999999");
+//			    		return error({ statusCode: 500, message: "store.state.lang.text.an_error_occured" })
+//			    		redirect("/error");
+	//   			 callback({ statusCode: 404, message: 'Post not found' })
+	    			})
 		  }
 
 	}

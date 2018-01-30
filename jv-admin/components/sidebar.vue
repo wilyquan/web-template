@@ -17,11 +17,11 @@
 					<nuxt-link to="/person/change-pwd">修改密码</nuxt-link>
 				</dd>
 			</dl>-->
+			<!--必须要判断菜单信息是否存在-->
 			<dl v-if="menu != null">
-				<!--必须要判断菜单信息是否存在-->
 				<dt><i class="type-ico ico-setup"></i>{{menu.name}}</dt>
 				<dd v-for="subMenu in menu.subMenus" :key="subMenu.id" v-bind:class="{selected : subMenu.selected}">
-					<a @click="selectMenu(subMenu.id)">{{subMenu.name}}</a>
+					<a @click="selectMenu(subMenu.id)" v-bind:href="subMenu.url">{{subMenu.name}}</a>
 				</dd>
 			</dl>
 			<!--<dl>
@@ -66,11 +66,12 @@
 	import { mapMutations } from 'vuex'
 	export default {
 		head:{
-			script:[ {src : '~/js/menu.js' }]
+			script:[ {src : '/menu.js' }]
 		},
 		computed: {
 			menu() {
 //				debugger;
+				
 				//获得子菜单对象
 				var menu;
 				var menus = this.$store.state.menus;
