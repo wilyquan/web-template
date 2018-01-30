@@ -44,7 +44,7 @@
 							</div>
 						</div>
 					</div>
-
+					
 					<div class="row cc-card-row">
 						<div class="col-sm-12 ">
 							<div id="accordion">
@@ -93,7 +93,7 @@
 
 <script>
 	import CCTopbar from '~/components/nav-topbar.vue'
-
+	import axios from 'axios'
 	export default {
 		layout: 'layout',
 		components: {
@@ -107,7 +107,19 @@
 		},
 		computed: {
 
-		}
+		},
+		fetch ({ store, params,redirect }) {
+			debugger;
+			console.log("hello world");
+		    return axios.get('http://localhost:8080/menu/nuxt')
+		    .then((res) => {
+		      store.commit('setMenus', res.data)
+		    }).catch((e) => {
+		    		console.log("99999999999999999");
+		    		redirect("/error");
+//   			 callback({ statusCode: 404, message: 'Post not found' })
+    			})
+		  }
 
 	}
 </script>
