@@ -6,41 +6,41 @@ const store = () => new Vuex.Store({
 		menus: [{
 			id: '01',
 			name: '我的面板',
-			select: false,
+			selected: true,
 			menu: {
 				id: '',
 				name: '个人设置',
 				icon: 'type-ico',
-				subMenu: [{
+				subMenus: [{
 					id: '011',
 					name: '个人信息',
 					url: 'person/info',
-					select: true
+					selected: false
 				}, {
 					id: '002',
 					name: '修改密码',
 					url: 'person/change-pwd',
-					select: false
+					selected: false
 				}]
 			}
 		}, {
-			id: '01',
+			id: '02',
 			name: '系统设置',
-			select: false,
+			selected: false,
 			menu: {
 				id: '',
-				name: '个人设置',
+				name: '系统设置',
 				icon: 'type-ico',
-				subMenu: [{
+				subMenus: [{
 					id: '011',
-					name: '个人信息',
+					name: '系统信息',
 					url: 'person/info',
-					select: true
+					selected: false
 				}, {
 					id: '002',
-					name: '修改密码',
+					name: '字典信息',
 					url: 'person/change-pwd',
-					select: false
+					selected: false
 				}]
 			}
 

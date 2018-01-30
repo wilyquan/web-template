@@ -7,7 +7,7 @@
                          1.给标签dl添加样式"open",显示下拉列表
                          2.给标签dt或dd添加样式"on",显示选中状态
                     -->
-			<dl>
+			<!--<dl>
 				<dt><i class="type-ico "></i>个人设置</dt>
 
 				<dd class="selected">
@@ -16,22 +16,11 @@
 				<dd class="">
 					<nuxt-link to="/person/change-pwd">修改密码</nuxt-link>
 				</dd>
-
-				<!--<dd class="">
-									<a href="javascript:;">待审核任务</a>
-								</dd>
-
-								<dd class="">
-									<a href="javascript:;">已审核任务</a>
-								</dd>
-
-								<dd class="">
-									<a href="javascript:;">我提交的审核任务</a>
-								</dd>-->
-			</dl>
+			</dl>-->
 			<dl>
-				<dd v-for="item in $store.menus" :key="item.id">
-					{{ item.name }}
+				<dt><i class="type-ico ico-setup"></i>{{menu.name}}</dt>
+				<dd v-for="subMenu in menu.subMenus" :key="subMenu.id" v-bind:class="{selected : subMenu.selected}">
+					<a @click="selectMenu(subMenu.id)">{{subMenu.name}}</a>
 				</dd>
 			</dl>
 			<!--<dl>
@@ -73,6 +62,39 @@
 </template>
 
 <script>
+	import { mapMutations } from 'vuex'
+	export default {
+		head:{
+			script:[ {src : '~/js/menu.js' }]
+		},
+		computed: {
+			menu() {
+				//获得子菜单对象
+				var menu;
+				var menus = this.$store.state.menus;
+				for(var i = 0; i < menus.length; i++) {
+					var item = menus[i];
+					if(item.selected) {
+						menu = item.menu;
+						break;
+					}
+				}
 
-	console.log($store.menus)
+				return menu;
+			}
+		},
+		methods: {
+			selectMenu(selectId){
+				var subMenus = this.menu.subMenus;
+				for (var i=0; i<subMenus.length; i++){
+					var subMenu = subMenus[i];
+					if (subMenu.id === selectId){
+						subMenu.selected = true;
+					}else{
+						subMenu.selected = false;
+					}
+				}
+			}
+		}
+	}
 </script>
