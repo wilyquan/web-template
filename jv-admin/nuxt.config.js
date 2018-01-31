@@ -36,7 +36,7 @@ module.exports = {
 	},
 
 	css: [
-		'~/css/bootstrap.min.css',
+		'~/css/bootstrap.css',
 		'~/css/main.css',
 		'~/css/icon.css',
 		'~/css/global.css'

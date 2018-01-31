@@ -1,9 +1,11 @@
 import Vuex from 'vuex'
+import axios from 'axios'
 
 const store = () => new Vuex.Store({
 	state: {
 		count: 2,
-		menus: null
+		menus: {},
+		first: true
 //		[{
 //			id: '01',
 //			name: '我的面板',
@@ -51,8 +53,16 @@ const store = () => new Vuex.Store({
 		increment(state) {
 			state.count++
 		},
+		setFirst(state, status){
+			state.first = false;	
+		},
 		setMenus(state, menus){
 			state.menus = menus;	
+//			console.log("set menus ...");
+//			window.localStorage.UserInfo = "wilyquan";
+//			console.log("aaa = " + window.localStorage.UserInfo);
+//			window.localStorage.clear();
+//			state.menus = menus;	
 		}
 		//		setUserInfo(state, info) {
 		//			state.userInfo = info;
@@ -60,7 +70,30 @@ const store = () => new Vuex.Store({
 		//		}
 	},
 	actions: {
-		
+		async nuxtServerInit({
+			state,
+			commit
+		}, {
+			isDev,
+			req,
+			redirect
+		}) {
+			try {
+//				const resReleases = await axios(state.apiURI + '/releases')
+//				commit('setGhVersion', resReleases.data[0].name)
+//				const resLang = await axios(state.apiURI + '/lang/' + state.locale)
+//				commit('setLang', resLang.data)
+//				commit('setDocVersion', resLang.data.docVersion)
+//				if (state.first){
+					const resMenu = await axios("http://localhost:8000/menu/nuxt");
+					commit('setMenus', resMenu.data);
+					commit('setFirst', false);
+//				}
+				
+			} catch (e) {
+				console.error('Error on [nuxtServerInit] action, please run the docs server.' + e) // eslint-disable-line no-console
+			}
+		}
 	}
 })
 

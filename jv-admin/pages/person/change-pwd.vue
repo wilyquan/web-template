@@ -50,11 +50,11 @@
 	</div>
 </template>
 
-<script>
+<!--<script>
 	import CCTopbar from '~/components/nav-topbar.vue'
 
 	export default {
-		layout: 'layout',
+//		layout: 'layout',
 		components: {
 			CCTopbar
 		},
@@ -65,4 +65,4 @@
 			}
 		}
 	}
-</script>
+</script>-->

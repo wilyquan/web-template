@@ -21,7 +21,8 @@
 			<dl v-if="menu != null">
 				<dt><i class="type-ico ico-setup"></i>{{menu.name}}</dt>
 				<dd v-for="subMenu in menu.subMenus" :key="subMenu.id" v-bind:class="{selected : subMenu.selected}">
-					<a @click="selectMenu(subMenu.id)" v-bind:href="subMenu.url">{{subMenu.name}}</a>
+					<!--<a @click="selectMenu(subMenu.id)" >{{subMenu.name}} </a>-->
+					<router-link @click="th$router.push(subMenu.url)">Go to Bar</router-link>
 				</dd>
 			</dl>
 			<!--<dl>
@@ -65,17 +66,34 @@
 <script>
 	import { mapMutations } from 'vuex'
 	export default {
-		head:{
-			script:[ {src : '/menu.js' }]
+		head: {
+			script: [{
+				src: '/menu.js'
+			}]
 		},
 		computed: {
+			
+//			asyncData(context) {
+//				console.log("side bar - asyncData ...");
+//				// called every time before loading the component
+//				return {
+//					name: 'World'
+//				}
+//			},
+//			fetch() {
+//				console.log("side bar - fetch ...");
+//				return {
+//					name:"hello"
+//				}
+//				// The fetch method is used to fill the store before rendering the page
+//			},
 			menu() {
-//				debugger;
-				
+				//				debugger;
+
 				//获得子菜单对象
 				var menu;
 				var menus = this.$store.state.menus;
-				if(menus == null){
+				if(menus == null) {
 					return null;
 				}
 				for(var i = 0; i < menus.length; i++) {
@@ -90,16 +108,17 @@
 			}
 		},
 		methods: {
-			selectMenu(selectId){
+			selectMenu(selectId) {
 				var subMenus = this.menu.subMenus;
-				for (var i=0; i<subMenus.length; i++){
+				for(var i = 0; i < subMenus.length; i++) {
 					var subMenu = subMenus[i];
-					if (subMenu.id === selectId){
+					if(subMenu.id === selectId) {
 						subMenu.selected = true;
-					}else{
+					} else {
 						subMenu.selected = false;
 					}
 				}
+			
 			}
 		}
 	}

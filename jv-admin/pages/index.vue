@@ -109,14 +109,16 @@
 
 		},
 		fetch ({ store, params,redirect }) {
-			debugger;
+//			debugger;
 //			localStorage.user ="wangquan";
 			console.log("hello world");
-		    return axios.get('http://localhost:8080/menu/nuxt')
+			
+		    return axios.get('http://localhost:8000/menu/nuxt')
 				.then((res) => {
 			      store.commit('setMenus', res.data);
-			    }).catch((e) => {
+			   }).catch((e) => {
 			    		console.log("99999999999999999");
+			    		
 //			    		return error({ statusCode: 500, message: "store.state.lang.text.an_error_occured" })
 //			    		redirect("/error");
 	//   			 callback({ statusCode: 404, message: 'Post not found' })

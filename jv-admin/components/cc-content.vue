@@ -3,7 +3,8 @@
 
 	<!-- 主区域 [[ -->
 	<div class="cc-content">
-		<nuxt/>
+		<!--<nuxt/>-->
+		<router-view></router-view>
 	</div>
 	
 	<!-- 主区域 -->

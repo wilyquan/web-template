@@ -96,9 +96,9 @@
 
 <script>
 	import CCTopbar from '~/components/nav-topbar.vue'
-
+	import { mapMutations } from 'vuex'
 	export default {
-		layout: 'layout',
+//		layout: 'layout',
 		components: {
 			CCTopbar
 		},
@@ -111,10 +111,14 @@
 		data () {
    		 	return { project: 'default' }
   		},
-//		asyncData (context) {
-////			localStorage.user ="wangquan";
-//			console.log("========nuxt=========");
-// 			return { project: 'nuxt' }
-//		}
+		asyncData (context) {
+//			localStorage.user ="wangquan";
+			console.log("========nuxt=========");
+   			return { project: 'nuxt' }
+		},
+		fetch(){
+			return null; 
+		}
+		
 	}
 </script>
