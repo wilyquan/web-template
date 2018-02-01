@@ -1,0 +1,21 @@
+html,
+body {
+  height: 100%;
+  background-color: #333;
+  background:url("../img/common/bg-2.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+/* 脚部 */
+.cc-footer{padding-bottom:30px;color:#8d8d8d;text-align:center;font:12px/1.6 tahoma,arial,"Hiragino Sans GB",\5B8B\4F53,sans-serif;}
+.cc-footer a{color:#8d8d8d;}
+.cc-footer a:hover{color:#459ae9}
+.cc-footer .vs{color:#ccc;}
+
+.cc-container{width: 1200px; height: 300px; background: #005CBF;}

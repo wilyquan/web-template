@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8" />
+		<title></title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/login.css" rel="stylesheet">
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		
+		<script>
+			$(document).ready(function() {
+				var winHeight = $(window).height();
+				$("#container").css("height", winHeight);
+				$(window).resize(function() {
+					winHeight = $(window).height();
+					$("#container").css("height", winHeight);
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<div class="d-flex justify-content-center align-items-center align-self-center" id="container">
+			<div class="cc-container">
+				<div class="d-flex justify-content-center">
+				</div>
+			</div>
+		</div>
+
+		<!-- 底部 -->
+		<div class="d-flex justify-content-center fixed-bottom">
+			<div class="cc-footer">
+				<a href="#">关于财付通</a>
+				<i class="vs">|</i>
+				<a href="#">联系邮箱</a>
+				<i class="vs">|</i>
+				<a href="#">商户平台使用协议</a>
+				<i class="vs">|</i> Powered By Tencent &amp; Tenpay　Copyright &copy; 2005-2016 All Rights Reserved.
+			</div>
+		</div>
+	</body>
+
+</html>
